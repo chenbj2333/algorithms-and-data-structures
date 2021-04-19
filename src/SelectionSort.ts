@@ -11,6 +11,16 @@ class SelectionSort {
       }
       this.swap(arr, i, minIndex);
     }
+    // 从后往前排
+    // for (let i = arr.length - 1; i >= 0; i--) {
+    //   let maxIndex = i;
+    //   for (let j = i; j >= 0; j--) {
+    //     if (arr[j] > arr[maxIndex]) {
+    //       maxIndex = j;
+    //     }
+    //   }
+    //   this.swap(arr, i, maxIndex);
+    // }
   }
 
   private static swap<T>(arr: T[], a: number, b: number) {

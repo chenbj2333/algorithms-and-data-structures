@@ -1,5 +1,6 @@
+import ArrayGenerator from './ArrayGenerator';
 import SelectionSort from './SelectionSort';
+import SortingHelper from './SortingHelper';
 
-const data = [11, 21, 34, 1, 234];
-SelectionSort.sort(data);
-console.log(data);
+const data = ArrayGenerator.generateRandomArray(1000, 1, 1000);
+SortingHelper.sortTest(SelectionSort, data);
