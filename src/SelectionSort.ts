@@ -1,3 +1,5 @@
+import { swap } from './uttils';
+
 class SelectionSort {
   private constructor() {}
 
@@ -9,7 +11,7 @@ class SelectionSort {
           minIndex = j;
         }
       }
-      this.swap(arr, i, minIndex);
+      swap(arr, i, minIndex);
     }
     // 从后往前排
     // for (let i = arr.length - 1; i >= 0; i--) {
@@ -21,12 +23,6 @@ class SelectionSort {
     //   }
     //   this.swap(arr, i, maxIndex);
     // }
-  }
-
-  private static swap<T>(arr: T[], a: number, b: number) {
-    const temp: T = arr[a];
-    arr[a] = arr[b];
-    arr[b] = temp;
   }
 }
 

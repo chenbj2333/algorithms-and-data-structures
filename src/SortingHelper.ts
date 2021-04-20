@@ -10,9 +10,9 @@ class SortingHelper {
     return true;
   }
 
-  public static sortTest<T>(sortcls: any, arr: T[]) {
+  public static sortTest<T>(sortfunc: (arr: T[]) => void, arr: T[]) {
     const startTime = new Date().getTime();
-    sortcls.sort(arr);
+    sortfunc(arr);
     const endTime = new Date().getTime();
     const time = endTime - startTime;
 
