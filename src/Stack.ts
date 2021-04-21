@@ -9,7 +9,7 @@ interface IStack<T> {
 class Stack<T> implements IStack<T> {
   private array: T[];
 
-  constructor(arr: T[]) {
+  constructor(arr: T[] = []) {
     this.array = arr;
   }
 
@@ -35,3 +35,5 @@ class Stack<T> implements IStack<T> {
     return this.array.length === 0;
   }
 }
+
+export default Stack;
