@@ -37,3 +37,8 @@ yarn dev
 
   - 后进先出的数据结构
   - last in first out (LIFO)
+
+- ### 队列
+
+  - 遵循先进先出原则的一组有序的项。队列在尾部添加新元素，并从顶部移除元素
+  - first in first out(FIFO)
