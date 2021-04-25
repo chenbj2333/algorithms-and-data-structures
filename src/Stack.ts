@@ -9,8 +9,8 @@ interface IStack<T> {
 class Stack<T> implements IStack<T> {
   private array: T[];
 
-  constructor(arr: T[] = []) {
-    this.array = arr;
+  constructor() {
+    this.array = [];
   }
 
   public push(item: T): void {
@@ -22,9 +22,9 @@ class Stack<T> implements IStack<T> {
     return this.array.pop();
   }
 
-  // 删除栈顶元素并返回该元素
+  // 获得栈顶元素并返回该元素
   public peek() {
-    return this.array.shift();
+    return this.array[0];
   }
 
   public getSize() {
