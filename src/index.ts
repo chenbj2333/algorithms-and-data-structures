@@ -3,8 +3,8 @@
 // import SelectionSort from './SelectionSort';
 // import SortingHelper from './SortingHelper';
 
-import Queue from './Queue';
-import Stack from './Stack';
+// import Queue from './Queue';
+// import Stack from './Stack';
 
 // const data = ArrayGenerator.generateRandomArray(10000, 1, 10000);
 // SortingHelper.sortTest(SelectionSort.sort, data);
@@ -21,13 +21,22 @@ import Stack from './Stack';
 // console.log(s);
 
 // queue test
-const q = new Queue<number>();
-for (let i = 0; i < 5; i++) {
-  q.enqueue(i);
-  console.log(q);
+// const q = new Queue<number>();
+// for (let i = 0; i < 5; i++) {
+//   q.enqueue(i);
+//   console.log(q);
 
-  if (i % 3 === 2) {
-    q.dequeue();
-    console.log(q);
-  }
+//   if (i % 3 === 2) {
+//     q.dequeue();
+//     console.log(q);
+//   }
+// }
+import LinkedList from './LinkedList';
+
+const linked = new LinkedList();
+for (let i = 0; i < 5; i++) {
+  linked.addLast(i);
 }
+
+linked.addNode(2, 999);
+console.log(linked.toString());
